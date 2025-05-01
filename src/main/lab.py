@@ -12,7 +12,7 @@ def create_list(n):
     """
     if n <= 0:
         raise ValueError("Number of elements must be positive")
-    return 0
+    return list(range(1,n+1))
 
 
 def access_list_element(my_list, index):
@@ -26,7 +26,7 @@ def access_list_element(my_list, index):
     if index < 0 or index >= len(my_list):
         return "Invalid index"
     
-    return -1
+    return my_list[index]
 
 
 def reverse_list(my_list):
@@ -36,7 +36,8 @@ def reverse_list(my_list):
     :param my_list: The list to reverse.
     :return: The reversed list.
     """
-    return 0
+    my_list.reverse()
+    return my_list
 
 
 def combine_lists(list1, list2):
@@ -47,6 +48,6 @@ def combine_lists(list1, list2):
     :param list2: The second list.
     :return: The combined list.
     """
-    return 0
+    return list1 + list2
 
 
